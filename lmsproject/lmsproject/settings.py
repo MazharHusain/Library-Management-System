@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -131,3 +132,4 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER ='mazharhusain9919@gmail.com' #sender's email-id
 EMAIL_HOST_PASSWORD ='keuftghsztyzdolo' #password associated with above email-id
+STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
